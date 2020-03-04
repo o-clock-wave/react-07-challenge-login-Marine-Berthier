@@ -1,24 +1,25 @@
 @import 'src/styles/vars';
 
+body {
+  font-family: 'Crimson Text', serif;
+}
+
 .app {
   color: $color-text;
   max-width: 360px;
-  margin-top: 3em;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1em;
+  margin: 3em auto;
 
   &-title {
     color: $color-title;
-    font-family: 'Cinzel', serif;
+    font-family: Cinzel;
     font-size: 1.6em;
-    text-transform: uppercase;
+    text-transform: lowercase;
   }
 
   &-desc {
     font-size: 1.1em;
     line-height: 1.4;
-    font-family: 'Crimson Text', serif;
+    margin: .25em 0;
   }
   
   &-link {
@@ -49,19 +50,6 @@
 .form {
   margin: 1em 0;
 
-  &-input{
-    font-family: 'Crimson Text', serif;
-    font-size: 1em;  
-    height: 3.3em;
-    width: 100%;
-    padding : 0 .3em; 
-    margin-bottom: 1em; 
-  }
-
-  &-input--click{
-    background-color: red; 
-  }
-
   &-submit {
     background: $color-button-background;
     border: 0;
@@ -72,8 +60,6 @@
     text-transform: uppercase;
     height: 3.3em;
     width: 100%;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: bold; 
 
     &.form-submit--login {
       display: flex;

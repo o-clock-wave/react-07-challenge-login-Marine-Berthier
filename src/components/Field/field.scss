@@ -1,0 +1,62 @@
+@import 'src/styles/vars';
+
+.field {
+  margin: .5em 0;
+  position: relative;
+  
+  &-input {
+    font-family: 'Crimson Text', serif;
+    width: 100%;
+    padding: .7em;
+    font-size: 1.1em;
+    border: 1px solid $color-input-border;
+    height: 3em;
+
+    &:focus {
+      border-color: $color-input-border--focus;
+    }
+  }
+
+  &-input:focus + &-label {
+    color: $color-input-label--focus;
+  }
+
+  &--has-content &-label{
+    display: block;
+  }
+
+  &--has-content &-input {
+    padding: 1.4em .7em .4em;
+  }
+
+  &-label {
+    display: none;
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+    font-weight: 700;
+    color: $color-input-label;
+    font-size: .7em;
+    text-transform: uppercase;
+    font-family: 'Source sans Pro', sans-serif;
+    animation: slideUpAndShow .3s;
+  }
+
+  /*
+  Possibilités en pur CSS
+  
+  &-input:not([value=""]) + &-label{ .... }
+  &-input:not(:placeholder-shown) + &-label{ .... }
+  */
+}
+
+@keyframes slideUpAndShow{
+  0% {
+    transform: translateY(1em);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0em);
+    opacity: 1;
+  }
+}
