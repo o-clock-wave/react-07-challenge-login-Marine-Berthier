@@ -1,5 +1,5 @@
 # _Login+Forgot_
 
 
-Formulaire de connexion offrant une expérience utilisateur (UX) conciliant *design* et utilisabilité. Réalisé avec React
+Login form with a *design* and efficient UX. Created with React
 
