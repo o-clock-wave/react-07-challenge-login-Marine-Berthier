@@ -15,10 +15,8 @@ const Field = ({
   onInputChange,
 }) => {
   const handleChange = (evt) => {
-    // Récup les infos du champ (name, value)
-    // recup d'info depuis l'event
     const newValue = evt.target.value;
-    // Éxécution de la fonction venant de App avec les data utiles
+
     onInputChange(newValue, name);
   };
 
